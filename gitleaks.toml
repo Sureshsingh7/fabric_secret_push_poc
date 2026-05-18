@@ -1,5 +1,11 @@
 title = "fabric-security-check gitleaks config"
 
+[allowlist]
+description = "Ignore AWS secret placeholder value"
+regexes = [
+  '''AWS_SECRET_ACCESS_KEY\s*=\s*"AWS_SECRET_PLACEHOLDER"''',
+]
+
 [extend]
 useDefault = true
 
