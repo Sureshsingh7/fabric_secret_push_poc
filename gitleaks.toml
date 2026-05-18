@@ -1,9 +1,9 @@
 title = "fabric-security-check gitleaks config"
 
 [allowlist]
-description = "Ignore AWS secret placeholder value"
+description = "Ignore az secret placeholder value"
 regexes = [
-  '''AWS_SECRET_ACCESS_KEY\s*=\s*"AWS_SECRET_PLACEHOLDER"''',
+  '''az_SECRET_ACCESS_KEY\s*=\s*"az_SECRET_PLACEHOLDER"''',
 ]
 
 [extend]
