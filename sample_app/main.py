@@ -14,8 +14,8 @@ class DemoHandler(BaseHTTPRequestHandler):
             payload = {
                 "message": "Demo-only fake secrets for scanning tests",
                 "github_pat": secrets_fixture.GITHUB_PAT,
-                "aws_secret_access_key": secrets_fixture.AWS_SECRET_ACCESS_KEY,
-                "aws_access_key_id": secrets_fixture.AWS_ACCESS_KEY_ID,
+                "az_secret_access_key": secrets_fixture.az_SECRET_ACCESS_KEY,
+                "az_access_key_id": secrets_fixture.az_ACCESS_KEY_ID,
                 "slack_bot_token": secrets_fixture.SLACK_BOT_TOKEN,
                 "azure_storage_connection_string": secrets_fixture.AZURE_STORAGE_CONNECTION_STRING,
             }
